@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './header/header';
 import { GradientAnimatedBgComponent } from './gradient-animated-bg/gradient-animated-bg';
 
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, Header, GradientAnimatedBgComponent],
