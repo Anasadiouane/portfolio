@@ -1,0 +1,25 @@
+<!-- Lightswind CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightswind@1.0.1/src/lightswind.css" />
+
+<div class="bg-black blur-container absolute inset-0 grid overflow-hidden" style="filter: blur(12vw);">
+  <!-- First shape -->
+  <div class="shape absolute inset-0 mx-auto"
+    [ngStyle]="{
+      clipPath: clipPath,
+      background: 'linear-gradient(hotpink, red, orange, yellow, hotpink)',
+      animation: 'GradientAnimatedBgTurn 8000ms linear infinite',
+      transform: 'rotate(0deg)',
+      opacity: '0.66'
+    }">
+  </div>
+
+  <!-- Second shape -->
+  <div class="shape absolute inset-0 mx-auto"
+    [ngStyle]="{
+      clipPath: clipPath,
+      background: 'linear-gradient(cyan, blue, green, purple, cyan)',
+      animation: 'GradientAnimatedBgTurn 6000ms linear infinite',
+      transform: 'rotate(180deg)'
+    }">
+  </div>
+</div>
