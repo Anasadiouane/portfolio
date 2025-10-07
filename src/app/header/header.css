@@ -1,37 +1,40 @@
-/* nav {
-  background-color: #333;
-  padding: 1rem;
-  display: flex;
-  gap: 1rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-} */
-
-body:before {
-  content: '';
-  position: absolute;
-  inset: 40% -60% 0 -60%;
-  opacity: 0.3;
-  pointer-events: none;
- 
-}
-nav{
-  position: relative;
-  z-index: 1;
-}
-
-nav ul {
+* {
   margin: 0;
-  padding: 0; 
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  color: white;
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
-nav.before .active-element{
-  transform: rotate(180deg);
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar button {
+  position: relative;
+  font-size: 1.3em;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 6px 20px;
+  transition: .5s;
+}
+
+.navbar button:hover {
+  background: black;
+  color: rgb(0, 255, 64);
+  border-radius: 20px;
+  box-shadow: 0 0 5px black,
+    0 0 25px black,
+    0 0 50px black,
+    0 0 100px black;
 }
