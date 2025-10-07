@@ -10,7 +10,7 @@ nav a {
   text-decoration: none;
 } */
 
-body::before {
+body:before {
   content: '';
   position: absolute;
   inset: 40% -60% 0 -60%;
@@ -29,6 +29,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 40px;
+  color: white;
 }
 
 nav.before .active-element{
