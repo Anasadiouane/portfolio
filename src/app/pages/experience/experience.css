@@ -1,0 +1,44 @@
+.experience {
+  padding: 4rem 2rem;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.experience h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00ff99;
+}
+
+.experience-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ff99;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px rgba(0, 255, 128, 0.2);
+  text-align: left;
+}
+
+.experience-card h3 {
+  font-size: 1.5rem;
+  color: #00ccff;
+  margin-bottom: 0.5rem;
+}
+
+.experience-card .duration {
+  font-style: italic;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.experience-card .description {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
