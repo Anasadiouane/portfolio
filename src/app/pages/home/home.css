@@ -4,7 +4,6 @@
   justify-content: center;
   height: calc(80vh - 72px);
   padding: 2rem;
-  padding-top: 92px; /* header height + small gap */
   color: #ffffff;
   position: relative;
   z-index: 1;

@@ -1,9 +1,15 @@
 <nav class="navbar">
-  <ul>
-    <li class="active"><button (click)="navigateTo('home')">Home</button></li>
-    <li><button (click)="navigateTo('about')">About</button></li>
-    <li><button (click)="navigateTo('skills')">Skills</button></li>
-    <li><button (click)="navigateTo('experience')">Experience</button></li>
-    <li><button (click)="navigateTo('contact')">Contact</button></li>
+  <button class="hamburger" aria-label="Toggle navigation" (click)="toggleMenu()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <ul [class.open]="isOpen">
+    <li class="active"><button (click)="navigateTo('home'); toggleMenu()">Home</button></li>
+    <li><button (click)="navigateTo('about'); toggleMenu()">About</button></li>
+    <li><button (click)="navigateTo('skills'); toggleMenu()">Skills</button></li>
+    <li><button (click)="navigateTo('experience'); toggleMenu()">Experience</button></li>
+    <li><button (click)="navigateTo('contact'); toggleMenu()">Contact</button></li>
   </ul>
 </nav>

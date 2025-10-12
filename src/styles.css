@@ -17,3 +17,18 @@ body {
 app-root, router-outlet {
 	background: transparent;
 }
+
+/* header height variable — keep in one place so mobile/desktop stays consistent */
+:root {
+	--header-height: 72px;
+}
+
+/* ensure scrolling to an element leaves room for the fixed header */
+section {
+	scroll-margin-top: calc(var(--header-height) + 16px);
+}
+
+/* give body a top padding equal to header height so content isn't hidden by the fixed header */
+body {
+	padding-top: var(--header-height);
+}
