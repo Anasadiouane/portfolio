@@ -42,3 +42,22 @@
   color: #ccc;
   line-height: 1.6;
 }
+
+.card-actions {
+  margin-top: 1.2rem;
+  text-align: right;
+}
+
+.rapport-btn {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  background: #00ff99;
+  color: #000;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.rapport-btn:hover {
+  background: #00cc77;
+}
